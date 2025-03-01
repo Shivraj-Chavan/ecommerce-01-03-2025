@@ -20,9 +20,7 @@ export default function AllProducts() {
   <div className="container">
       <div className='row'>
         {
-            apiData.map((data,ind)=>{
-                return <ProductCard data={data} key={ind} />
-            })
+            apiData.map((data,ind)=><ProductCard data={data} key={ind} />)
         }
     </div>
   </div>
